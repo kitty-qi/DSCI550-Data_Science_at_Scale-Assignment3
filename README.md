@@ -20,7 +20,7 @@ Xiaoyu Dong
 
 ## Dependencies
 
-A list of all of the dependencies used, included their version number. Need to download java. 
+A list of all of the dependencies used, included their version number.
 ```
 
 
