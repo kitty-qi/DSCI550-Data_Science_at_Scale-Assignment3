@@ -11,7 +11,8 @@ Mingyu Zong
 > 
 
 Hui Qi 
-> Took charge for 
+> Took charge of two D3 visualizations. 
+Wrote reports about these two visualizations. 
 
 Xiaoyu Dong
 > 
