@@ -54,9 +54,11 @@ In the
 
 #### Step1: D3 visualizations 
 
-All D3 visualizations need to the webpage locally by using a webserver (to test) like python -m http.server <port> in the directory where the downloaded observable html and JSON locate.
+Select the plots we want from https://observablehq.com/@d3/gallery . Then, we adjusted our data to fit and input into the existing visualization examples.
+After, completing drawing the chart in the d3 website, we download the codes of our d3 visualizations from the observable websites. upzip the document and open the terminal of this directory. In the terminal, we typed python -m http.server and opened http://localhost:8000/. 
 
-download the codes of our d3 visualizations from the observable websites. upzip the document and open the terminal of this directory. In the terminal, we typed python -m http.server and opened http://localhost:8000/. 
+Notice that : all D3 visualizations need to the webpage locally by using a webserver (to test) like python -m http.server <port> in the directory where the downloaded observable html and JSON locate.
+
 ```
 python -m http.server 
 ```
