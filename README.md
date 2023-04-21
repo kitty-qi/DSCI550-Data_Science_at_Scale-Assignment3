@@ -52,7 +52,7 @@ In the
 
 ## Methodology
 
-#### Step1: D3 visualizations 
+#### Step2: D3 visualizations 
 
 Select the plots we want from https://observablehq.com/@d3/gallery . Then, we adjusted our data to fit and input into the existing visualization examples.
 After, completing drawing the chart in the d3 website, we downloaded the codes of our d3 visualizations from the observable websites. unzipped the document and opened the terminal of this directory. In the terminal, we typed python -m http.server and opened http://localhost:8000/. 
