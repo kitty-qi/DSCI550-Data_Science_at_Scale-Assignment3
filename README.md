@@ -52,16 +52,15 @@ In the
 
 ## Methodology
 
-#### Step7: Download images, Install Tika Image Dockers and generate captions for Pixstory images posts
-I wrote a python script to modify URLs with prefix “/optimized” and download 95k images. I used Dockers for Image Captioning and Object Recognition. Commands for captions and objects are:
+#### Step1: D3 visualizations 
 
-``` 
-docker build -f Im2txtRestDockerfile -t uscdatascience/im2txt-rest-tika
-docker run -p 8764:8764 -it uscdatascience/inception-rest-tika
-docker build -f InceptionRestDockerfile -t uscdatascience/inception-rest-tika 
-docker run -p 8764:8764 -it uscdatascience/inception-rest-tika
-``` 
-I added two columns, Image Caption and Detected Objects, to the dataframe. Codes to download images, find captions, identify objects, analyze and visualize can be found in Step7/ImageDownloadDetect.ipynb.
+All D3 visualizations need to the webpage locally by using a webserver (to test) like python -m http.server <port> in the directory where the downloaded observable html and JSON locate.
+
+download the codes of our d3 visualizations from the observable websites. upzip the document and open the terminal of this directory. In the terminal, we typed python -m http.server and opened http://localhost:8000/. 
+```
+python -m http.server 
+```
+
 
 #### Step8: Language detection by using Tika’s language identifier and Google LangDetect/Python
 Since the narrative part of the post has a lot of tags, we wrote the remove_tag function to remove tags from the text. Then we called tika.language.from_buffer and langdetect.detect to detect the language of the text, and store the detection results into 'tika_language' and 'google_language'columns.
