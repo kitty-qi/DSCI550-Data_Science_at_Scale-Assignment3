@@ -12,7 +12,8 @@ Mingyu Zong
 
 Hui Qi 
 > Took charge of two D3 visualizations. <br>
-Wrote reports about these two visualizations. 
+Wrote reports about these two visualizations.
+Took charge of Apache Solr (step 3 & 5)
 
 Xiaoyu Dong
 > 
@@ -63,19 +64,19 @@ Notice that : all D3 visualizations need to the webpage locally by using a webse
 python -m http.server 
 ```
 
+#### Step3: Ingest your Pixstory into Apache Solr
 
-#### Step8: Language detection by using Tika’s language identifier and Google LangDetect/Python
-
-
-#### Step9: RTG Translation
+First, we need to use "git clone" from https://github.com/nasa-jpl-memex/GeoParser. So, "git clone https://github.com/nasa-jpl-memex/GeoParser.git". Then, take a look at this example in https://github.com/nasa-jpl-memex/GeoParser/wiki/Sample:-COVID19-publication-data-parsing. Follow the instruction in this covid example. Notice that possibaly need to do the installation in the Docker folder. Then, do the pre-requisties and "Get Data". We need to adjust the jupyter notebook, create_core.sh, and add_fields.sh from the covid example to our date before "Get Data". The order is create_core.sh (changing the folder name), jupyter notebook, add_fields.sh. Open http://localhost:8983/solr/ to see the result. 
 
 
-#### Step10: Location nname entity recognition by Tika GeoTopicParser with REST service of lucene-geo-gazetteer to find Lat/Lng
+#### Step9: 
+
+
+#### Step10: 
 
 
 
-
-#### Step11: Detoxify Scores Generation
+#### Step11: 
 
 
 
