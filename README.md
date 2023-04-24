@@ -11,7 +11,7 @@ Mingyu Zong
 > 
 
 Hui Qi 
-> Took charge of two D3 visualizations. <br>
+> Took charge of two D3 visualizations. (Index Chart, Zoomable Sunburst) <br>
 Wrote reports about these two visualizations.<br>
 Took charge of Apache Solr (step 3 & 5)
 
