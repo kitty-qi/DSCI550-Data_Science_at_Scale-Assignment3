@@ -12,7 +12,7 @@ Mingyu Zong
 
 Hui Qi 
 > Took charge of two D3 visualizations. <br>
-Wrote reports about these two visualizations.
+Wrote reports about these two visualizations.<br>
 Took charge of Apache Solr (step 3 & 5)
 
 Xiaoyu Dong
@@ -24,7 +24,10 @@ Xiaoyu Dong
 
 A list of all of the dependencies used, included their version number.
 ```
-
+pandas==1.4.4
+pysolr==3.9.0
+requests==2.23.0
+tqdm==4.64.1
 
 
 ```
