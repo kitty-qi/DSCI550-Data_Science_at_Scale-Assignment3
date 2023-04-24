@@ -41,10 +41,11 @@ pip install -r requirements.txt
 
 ## Running the project
 
-In the 
-```
-.ipynb
-```
+All d3 visualizaions are in the D3 folder. If you want to run and open the html files, please look at the step2 in Methodology section becasue you need to use a webserver, like python -m http.server <port> in the directory where the html file locates.
+
+
+In the step3_Apache_Solr folder, open the pixstory folder and take a look at the jupyter notebook and two .sh files. If you want to run it and re-do the same process, please look at the step3 in Methodology section.
+
 
 
 ```
@@ -59,7 +60,7 @@ In the
 #### Step2: D3 visualizations 
 
 Select the plots we want from https://observablehq.com/@d3/gallery . Then, we adjusted our data to fit and input into the existing visualization examples.
-After, completing drawing the chart in the d3 website, we downloaded the codes of our d3 visualizations from the observable websites. unzipped the document and opened the terminal of this directory. In the terminal, we typed python -m http.server and opened http://localhost:8000/. 
+After, completing drawing the chart in the d3 website, we downloaded the codes of our d3 visualizations from the observable websites, unzipped the document and opened the terminal of this directory. In the terminal, we typed python -m http.server and opened http://localhost:8000/. 
 
 Notice that : all D3 visualizations need to the webpage locally by using a webserver (to test) like python -m http.server <port> in the directory where the downloaded observable html and JSON locate.
 
