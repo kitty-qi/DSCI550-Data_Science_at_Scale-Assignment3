@@ -12,7 +12,7 @@ Mingyu Zong
 
 Hui Qi 
 > Took charge of two D3 visualizations. (Index Chart, Zoomable Sunburst) <br>
-Wrote reports about these two visualizations.<br>
+Wrote reports about visualizations of Radial Stacked Bar Chart，Index Chart, and Zoomable Sunburst.<br>
 Took charge of Apache Solr (step 3 & 5)
 
 Xiaoyu Dong
