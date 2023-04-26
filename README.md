@@ -18,7 +18,9 @@ Wrote reports about visualizations of Radial Stacked Bar Chart, Index Chart, and
 Took charge of Apache Solr (step 3 & 5)
 
 Xiaoyu Dong
-> 
+> Wrote reports about Image Space. <br>
+Wrote reports about Geoparser and location data. <br>
+Took charge of Image Space and Apache Solr. (Before mongo container and create-score.sh)
 
 
 
