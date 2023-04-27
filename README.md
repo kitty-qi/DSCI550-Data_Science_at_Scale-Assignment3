@@ -52,11 +52,6 @@ In the step3_Apache_Solr folder, open the pixstory folder and take a look at the
 
 
 
-```
-.ipynb
-```
-
-
 
 
 ## Methodology
