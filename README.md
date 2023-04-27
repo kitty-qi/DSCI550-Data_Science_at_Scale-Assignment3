@@ -5,12 +5,14 @@ Team menbers: Jimin Ding, Mingyu Zong, Hui Qi, Xiaoyu Dong
 
 ## Group Assignment Allocation
 Jimin Ding
-> Took charge of one D3 visualizations.(Radial Stacked Bar Char) <br>
+> Took charge of one D3 visualizations.(Radial Stacked Bar Chart) <br>
 Took charge of Image Space. (Step4) <br>
 Took charge of MEMEX Geoparser. (step6)
 
 Mingyu Zong
-> 
+> D3 Visualizations (Timeseries, Heatmap). <br>
+Webpage development. <br>
+Discussion in report realted to these visualizations.
 
 Hui Qi 
 > Took charge of two D3 visualizations. (Index Chart, Zoomable Sunburst) <br>
@@ -32,7 +34,8 @@ pandas==1.4.4
 pysolr==3.9.0
 requests==2.23.0
 tqdm==4.64.1
-
+reverse_geocoder==1.5.1
+country_converter==1.0.0
 
 ```
 ## Installation
@@ -45,7 +48,9 @@ pip install -r requirements.txt
 
 ## Running the project
 
-All d3 visualizaions are in the D3 folder. If you want to run and open the html files, please look at the step2 in Methodology section becasue you need to use a webserver, like python -m http.server <port> in the directory where the html file locates.
+All d3 visualizaions are in the D3 folder. If you want to run and open the html files locally, please look at the step2 in Methodology section becasue you need to use a webserver, like python -m http.server <port> in the directory where the html file locates.
+
+We also host a live webpage displaying all the graphs at https://mz0ng.github.io/550-HW3/.
 
 
 In the step3_Apache_Solr folder, open the pixstory folder and take a look at the jupyter notebook and two .sh files. If you want to run it and re-do the same process, please look at the step3 in Methodology section.
