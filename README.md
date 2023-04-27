@@ -36,7 +36,6 @@ requests==2.23.0
 tqdm==4.64.1
 reverse_geocoder==1.5.1
 country_converter==1.0.0
-
 ```
 ## Installation
 
