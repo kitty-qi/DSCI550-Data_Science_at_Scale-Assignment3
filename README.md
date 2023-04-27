@@ -12,7 +12,7 @@ Took charge of MEMEX Geoparser. (step6)
 Mingyu Zong
 > D3 Visualizations (Timeseries, Heatmap). <br>
 Webpage development. <br>
-Discussion in report realted to these visualizations.
+Discussion in report related to these visualizations.
 
 Hui Qi 
 > Took charge of two D3 visualizations. (Index Chart, Zoomable Sunburst) <br>
