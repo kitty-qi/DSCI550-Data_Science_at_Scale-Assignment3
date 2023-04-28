@@ -75,7 +75,7 @@ To get datasets used for drawing timeseries and heatmaps, execute all blocks in 
 
 The dataset for the index chart is "df_result.csv" in the indexchart folder inside D3 directory. The original example is https://observablehq.com/@d3/index-chart. The dataset is produced by d3_language.ipynb.
 
-The original example of the Zoomable Sunburst plot is https://observablehq.com/@d3/zoomable-sunburst. The data information we used for this plot is "geolocation_gender.json". This json file is the result of the association of geolocation mentioned and user's gender and can be seen from sunburst.ipynb. 
+The original example of the Zoomable Sunburst plot is https://observablehq.com/@d3/zoomable-sunburst. The data information we used for this plot is "geolocation_gender.json". This json file is the result of the association between geolocation mentioned and user's gender and can be seen from sunburst.ipynb. 
 
 The orignial example of radial stacked bar chart is https://observablehq.com/@d3/radial-stacked-bar-chart. 
   
