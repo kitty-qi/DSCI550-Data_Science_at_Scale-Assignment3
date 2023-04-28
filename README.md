@@ -71,6 +71,7 @@ Notice that : all D3 visualizations need to the webpage locally by using a webse
 python -m http.server 
 ```
 
+To get datasets used for drawing timeseries and heatmaps, execute all blocks in "Extract Subsets.ipynb" in the D3 folder, make sure "final.tsv" is in the same folder. The execution outputs five files: "toxic_posts.csv", "toxic.json", "allcodes.json", "sarcasm.json", and "hate.json". Next, move the csv file into timeseries folder and all json files into heatmap folder. Then, /heatmap/heatmap.html and timeseries/timeseries.html should display the visualizations properly.
   
 ### Step3: Ingest your Pixstory into Apache Solr
 
