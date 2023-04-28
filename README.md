@@ -72,6 +72,12 @@ python -m http.server
 ```
 
 To get datasets used for drawing timeseries and heatmaps, execute all blocks in "Extract Subsets.ipynb" in the D3 folder, make sure "final.tsv" is in the same folder. The execution outputs five files: "toxic_posts.csv", "toxic.json", "allcodes.json", "sarcasm.json", and "hate.json". Next, move the csv file into timeseries folder and all json files into heatmap folder. Then, /heatmap/heatmap.html and timeseries/timeseries.html should display the visualizations properly.
+
+The dataset for the index chart is "df_result.csv" in the indexchart folder inside D3 directory. The original example is https://observablehq.com/@d3/index-chart. 
+
+The original example of the Zoomable Sunburst plot is https://observablehq.com/@d3/zoomable-sunburst. The data information we used for this plot is "geolocation_gender.json".
+
+The orignial example of radial stacked bar chart is https://observablehq.com/@d3/radial-stacked-bar-chart. 
   
 ### Step3: Ingest your Pixstory into Apache Solr
 
@@ -123,8 +129,6 @@ cd $GEOPARSER_HOME/examples/geo95000
 ```
   
 Now, modify the df source and the json_doc["text"] source in Ingest_geo95000.ipynb. Finally, open http://localhost:8000/ and follow the Use GeoParser part in https://github.com/nasa-jpl-memex/GeoParser/wiki/Sample:-COVID19-publication-data-parsing to parse and view the data.
-
-
 
 
 
