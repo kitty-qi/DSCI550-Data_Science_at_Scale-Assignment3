@@ -1,0 +1,6 @@
+pandas==1.4.4
+pysolr==3.9.0
+requests==2.23.0
+tqdm==4.64.1
+reverse_geocoder==1.5.1
+country_converter==1.0.0

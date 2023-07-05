@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Untitled</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<link rel="stylesheet" href="../style.css" />
+<body>
+    <div class="banner">
+        <h1>D3 Visualizations</h1>
+        <button class="button" onclick="window.location.href='../timeseries/timeseries.html'">TimeSeries</button>
+        <button class="button" onclick="window.location.href='../heatmap/heatmap.html'">Heatmap</button>
+        <button class="button" onclick="window.location.href='../sunburst/index.html'">Sunburst</button>
+        <button class="button" onclick="window.location.href='../indexchart/index.html'">Index Chart</button>
+        <button class="button" onclick="window.location.href='./index.html'">Radial Stacked Bar Chart</button>
+    </div>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>

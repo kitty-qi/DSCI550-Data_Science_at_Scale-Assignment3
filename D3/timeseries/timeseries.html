@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.1.0/lodash.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="timeseries.js"></script>
+    <title>TimeSeries</title>
+</head>
+<body>
+    <div class="banner">
+        <h1>D3 Visualizations</h1>
+        <button class="button" onclick="window.location.href='./timeseries.html'">TimeSeries</button>
+        <button class="button" onclick="window.location.href='../heatmap/heatmap.html'">Heatmap</button>
+        <button class="button" onclick="window.location.href='../sunburst/index.html'">Sunburst</button>
+        <button class="button" onclick="window.location.href='../indexchart/index.html'">Index Chart</button>
+        <button class="button" onclick="window.location.href='../distribution/index.html'">Radial Stacked Bar Chart</button>
+    </div>
+    <div id="graph0" class="graph-container"></div>
+    <script>
+        let d = [];
+        Papa.parse('toxic_posts.csv', {
+            header: true,
+            download: true,
+            dynamicTyping: true,
+            complete: function(results) {
+                // Extract the 'Count' column from the parsed data
+                const dates = results.data.map(row => new Date(row.Date).getTime());
+                // Convert the 'Count' values into an array of objects with a 'value' property
+                const data = dates.map(date => ({ value: date }));
+                // Save the data into a variable for later use
+                const d = data;
+                console.log(d);
+                timeseries('graph0', d, true)
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/** Styles for Demo Application */
+
+body {
+  font: 16px "Open Sans";
+  color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+.graph-container {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+}
+.text {
+  width: 100%;
+}
+.text p {
+  width: 75%;
+  margin: auto;
+  padding: 10px 0px;
+  text-align: center;
+}
+code {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  code {
+    width: 70%;
+  }
+}
+.header {
+  width: 100%;
+  text-align: center;
+  margin: 1% 0;
+}
+.header img {
+  padding-top: 10px;
+}
+.header div {
+  font-weight: 700;
+  font-size: 1.6em;
+  padding-top: 10px;
+}
+.dac-logo {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .dac-logo {
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  .dac-logo img {
+    width: 120px;
+  }
+}
+.contact {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.footer {
+  font-size: 0.9em;
+  text-align: center;
+  padding: 5px;
+}
+/** Styles for TIMESERIES */
+
+.timeseries {
+  width: 100%;
+  padding: 2% 0;
+}
+.circ {
+  fill: #d35400;
+  opacity: 0.6;
+  stroke: rgba(211, 84, 0, 0.7);
+  stroke-width: 5px;
+}
+.domain {
+  display: none;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 12px;
+}
+.tick line {
+  stroke: #d5d5d5;
+  opacity: 0.7;
+}
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+.clear-brush {
+  display: none;
+}
+.brush-control {
+  padding: 0.5%;
+  width: 100%;
+  text-align: center;
+}
+.brush-info {
+  display: inline-block;
+  font-size: 14px;
+}
+.subunit {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+}
+text.subunit-label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-anchor: middle;
+  fill: #000;
+}
+.subunit-label {
+  display: none;
+}
+.graticule {
+  fill: none;
+  stroke: #aaa;
+  stroke-opacity: 0.5;
+  stroke-width: 0.5px;
+}
+.banner {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 12px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: burlywood;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Heatmap</title>
+</head>
+<body>
+    <div class="banner">
+        <h1>D3 Visualizations</h1>
+        <button class="button" onclick="window.location.href='../timeseries/timeseries.html'">TimeSeries</button>
+        <button class="button" onclick="window.location.href='./heatmap.html'">Heatmap</button>
+        <button class="button" onclick="window.location.href='../sunburst/index.html'">Sunburst</button>
+        <button class="button" onclick="window.location.href='../indexchart/index.html'">Index Chart</button>
+        <button class="button" onclick="window.location.href='../distribution/index.html'">Radial Stacked Bar Chart</button>
+    </div>
+    <div class="button-container">
+        <button id="all-button">All Posts Graph</button>
+        <button id="toxic-button">Toxicity Graph</button>
+        <button id="sarcasm-button">Sarcasm Graph</button>
+        <button id="hatespeech-button">Hate Speech Graph</button>
+    </div>
+    <div class="graph-container">
+        <div id="all">
+            <p>Hover over to see how many posts have mentioned the country.</p>
+        </div>
+        <div id="toxic">
+            <p>Hover over to see how many TOXIC posts have mentioned the country.</p>
+        </div>
+        <div id="sarcasm">
+            <p>Hover over to see how many SARCASTIC posts have mentioned the country.</p>
+        </div>
+        <div id="hatespeech">
+            <p>Hover over to see how many HATE SPEECH posts have mentioned the country.</p>
+        </div>
+    </div>
+
+    <script src="draw.js"></script>
+    <script>
+        drawMap('#all', 'allcodes.json');
+        drawMap('#toxic', 'toxic.json');
+        drawMap('#sarcasm', 'sarcasm.json');
+        drawMap('#hatespeech', 'hate.json');
+        document.getElementById("all-button").addEventListener("click", function() {
+            showGraph("all");
+        });
+
+        document.getElementById("toxic-button").addEventListener("click", function() {
+            showGraph("toxic");
+        });
+
+        document.getElementById("sarcasm-button").addEventListener("click", function() {
+            showGraph("sarcasm");
+        });
+
+        document.getElementById("hatespeech-button").addEventListener("click", function() {
+            showGraph("hatespeech");
+        });
+
+        function showGraph(graphName) {
+            // Hide all graphs
+            document.getElementById("all").style.display = "none";
+            document.getElementById("toxic").style.display = "none";
+            document.getElementById("sarcasm").style.display = "none";
+            document.getElementById("hatespeech").style.display = "none";
+            // Show the selected graph
+            document.getElementById(graphName).style.display = "block";
+        }
+        showGraph('all');
+
+    </script>
+</body>
+</html>
